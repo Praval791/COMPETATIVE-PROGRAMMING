@@ -34,6 +34,13 @@ public:
 };
 
 // DP Memoization optimized
+// we don't actually concern about size because the recursion is first goes for prefix
+// if prefix1 = 'prefix' then suppose we can break this into dictionary words then
+// for another overlapping problem that check for prefix2 and now this prefix2 have any prefix same as
+// prefix1 then we don't need check for every size of this prefix
+// so that's why we don't need to keep track of size.
+
+// Simply the dp[index] is true if str[i.....n] can be break into dictionary entries.
 class Solution
 {
     string str;
