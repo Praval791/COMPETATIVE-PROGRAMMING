@@ -18,9 +18,9 @@ class Solution
             return dp[sInd][tInd];
         if (s[sInd] == t[tInd])
             return dp[sInd][tInd] = dpUtil(sInd + 1, tInd + 1);
-        return dp[sInd][tInd] = 1 + min(dpUtil(sInd + 1, tInd),
-                                        min(dpUtil(sInd, tInd + 1),
-                                            dpUtil(sInd + 1, tInd + 1)));
+        return dp[sInd][tInd] = 1 + min(dpUtil(sInd + 1, tInd),           // remove from s
+                                        min(dpUtil(sInd, tInd + 1),       // insert in s
+                                            dpUtil(sInd + 1, tInd + 1))); // replace in s
     }
 
 public:
