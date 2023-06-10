@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.abi": "json",
+        "*.css": "css",
+        "ostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && cd $dir && del $dir$fileNameWithoutExt.exe",
+        //etc.
+    },
+    "code-runner.runInTerminal": true,
+}

@@ -8,10 +8,13 @@ This repository contains my solutions to the problems from the CSES Problem Set 
 
 ## Repository Structure
 
-The repository is organized into different folders, each representing a category or topic from the CSES Problem Set. Inside each folder, you will find the problem solutions in cpp languages. Additionally, you may find any necessary input/output files or additional resources related to the problems.
+The repository is organized into different folders, first one is for the input output files and all others are for representing a category or topic from the CSES Problem Set. Inside each folder, you will find the problem solutions in cpp languages. Additionally, you may find any necessary input/output files or additional resources related to the problems.
 
 Here's an overview of the folder structure:
 
+- `IO Files`
+  - `input.txt`
+  - `output.txt`
 - `Category 1`
 
   - `Problem 1.cpp`
