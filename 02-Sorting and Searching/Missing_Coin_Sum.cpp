@@ -15,13 +15,24 @@ int main()
         cin >> coins[i];
     sort(coins.begin(), coins.end());
 
-    ll requiredSum = 1;
+    /* currentSum = all sum that can be made till now
+    if next element is x then it can be paired with all the elements
+    from 1 ... currentSum and make sum from 1+x ... currentSum+x
+    thus now you have sum
+    from {1 ... currentSum and x, 1 + x ... currentSum+x}
+
+    so if(x > currentSum + 1) that means there is a gap in the sum
+    and currentSum + 1 is the smallest sum that cannot be made
+    */
+    ll currSum = 0, requiredSum = currSum + 1;
     for (auto x : coins)
     {
+        requiredSum = currSum + 1;
         if (x > requiredSum)
             break;
-        requiredSum += x;
+        currSum += x;
     }
+
     cout << requiredSum << endl;
     return 0;
 }
