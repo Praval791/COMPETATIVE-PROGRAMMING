@@ -5,7 +5,9 @@
         "ostream": "cpp",
         "cmath": "cpp",
         "complex": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "code-runner.executorMap": {
